@@ -1,0 +1,17 @@
+Scenario 1: High-velocity social media feed
+Selection: NoSQL
+
+Reason 1 (Schema Flexibility): Social media data is highly diverse, consisting of text, images, videos, polls, and more. NoSQL allows for a flexible data structure (schema-less), enabling the system to store evolving content types without the need for the rigid table redefinitions required by SQL.
+
+Reason 2 (Horizontal Scalability): The system must process millions of posts every hour. NoSQL supports horizontal scaling—adding more commodity servers to distribute the load—more efficiently than SQL, which traditionally relies on vertical scaling (upgrading a single, expensive server).
+
+Reason 3 (High Velocity): NoSQL databases are optimized for high-speed write operations. This is crucial for a real-time news feed where millions of users are generating and updating content simultaneously.
+
+Scenario 2: Secure bank ledger
+Selection: SQL
+
+Reason 1 (ACID Compliance): In financial systems, atomicity and consistency are the top priorities. SQL strictly adheres to ACID properties, ensuring that if a transaction (like a fund transfer) fails midway, the system rolls back to its original state, preventing any loss or discrepancy in customer funds.
+
+Reason 2 (Data Integrity): SQL provides robust Constraints (such as CHECK, FOREIGN KEY, and NOT NULL). These built-in rules prevent invalid data entry at the database level, such as ensuring an account balance never drops below zero.
+
+Reason 3 (Structured Data): Banking records are typically highly structured and consistent over time. Utilizing SQL's Fixed Schema allows for predictable data management and complex relational queries, making auditing and reporting more secure and reliable.
