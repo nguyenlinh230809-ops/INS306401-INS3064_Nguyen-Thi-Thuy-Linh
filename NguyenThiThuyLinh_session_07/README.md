@@ -10,7 +10,6 @@
   Trả về tất cả các bản ghi từ bảng bên trái, bất kể có bản ghi khớp ở bảng bên phải hay không.  
   Nếu không có bản ghi khớp, các cột từ bảng bên phải sẽ có giá trị `NULL`.
 
----
 
 ### 2. Aggregation Logic
 
@@ -21,7 +20,6 @@
   `WHERE` được thực thi trước `GROUP BY`, nên không thể sử dụng với các hàm như `SUM()` hoặc `COUNT()`.  
   Ngược lại, `HAVING` được thực thi sau khi nhóm dữ liệu, nên có thể lọc dựa trên kết quả tổng hợp.
 
----
 
 ### 3. PDO Definition
 
@@ -34,7 +32,6 @@
   - **Object-Oriented Support**:  
     Hỗ trợ lập trình hướng đối tượng và xử lý lỗi bằng Exception → code sạch và dễ bảo trì hơn.
 
----
 
 ### 4. Security
 
@@ -46,9 +43,6 @@
   - Database biên dịch câu lệnh trước  
   - Dữ liệu truyền vào sau chỉ được coi là giá trị → không thể thực thi như SQL  
 
-➡️ Giúp ngăn chặn **SQL Injection**
-
----
 
 ### 5. Execution Flow
 
